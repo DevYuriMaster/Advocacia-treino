@@ -14,6 +14,10 @@ a {
   cursor: default;
 }
 
+.logo{
+  cursor: default;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -42,16 +46,17 @@ nav {
   text-transform: uppercase;
 }
 
-.social-list {
+.social-list  {
   list-style: none;
   display: flex;
   flex: 1;
   width: 500px;
   height: auto;
   justify-content: center;
+  align-items: stretch;
 }
 
-.social-list img {
+.social-list img  {
   height: 20px;
   width: 30px;
   margin: 15px;
@@ -67,6 +72,11 @@ nav {
   padding: 0px;
 }
 
+nav::after, nav::before {
+	content: '';
+	display: table;
+	clear: both;
+}
 
 
 .intro {
@@ -96,6 +106,12 @@ nav {
   font-size: 1.5em;
   color: #ffff;
   cursor: default;
+}
+
+.intro::after, .intro::before {
+	content: '';
+	display: table;
+	clear: both;
 }
 
 .container {
@@ -154,16 +170,15 @@ nav {
   display: flex;
   flex-direction: row;
   align-self: center;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 20px;
 }
 
 .balao{
-   
   background: #eab161;
   font-family: 'open sans';
-  font-size: 0.85em;
+  font-size: 0.90em;
   line-height: 1.6em;  
   border-radius: 15px;
   width: 300px;
@@ -173,4 +188,56 @@ nav {
   position: relative;
   margin-top: 30px;
 }
+
+.balao-h{
+  background: #eab161;
+  font-family: 'open sans';
+  font-size: 0.90em;
+  line-height: 1.8em;  
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.balao-h p {
+  justify-content: center;
+  padding-left: 70px;
+}
+
+.baloes::after, .baloes::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+.servicos{
+  background: #dcdcdc;
+
+}
+
+.servicos h1{
+  display: flex;
+  justify-content: center;
+  color: #eab161;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.servicos img{
+  margin: 70px 20px;
+  height: 500px;
+  width: 400px;
+}
+
+
+
+
+
+
 
